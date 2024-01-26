@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    td {text-align: center;}
+    </style>
+<head>
+  <title>Orders</title>
+</head>
+
+<body>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Client_ID</th>
+      </tr>
+        {% for item in data %}<tr>
+        <td>{{item.id}}</td>
+        <td>{{item.client_id}}</td>
+        <td>{{item.cost}}</td>
+        <td>{{item.name}}</td>
+      </tr>{% endfor %}
+    </table>
+  </div>
+</body>
+
+</html>
