@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_update.css')}}">
+<head>
+  <title>Update Orders</title>
+</head>
+
+<body>
+  <div>
+    <h1>Update Order</h1>
+        <form action="/orders/update" method="post">
+            <label for="id">ORDER ID:</label>
+            <input value = {{data.id}} type="text" id="id" readonly name="id"><br>
+            <label for="name">NAME:</label>
+            <input value = {{data.name}} type="text" id="name" name="name"><br>
+            <label for="cost">COST:</label>
+            <input value = {{data.cost}} type="text" id="cost" name="cost"><br>
+            <input type="submit" type="Submit" value = "Change" id="submit">
+        </form>
+  </div>
+</body>
+
+</html>

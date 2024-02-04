@@ -1,0 +1,27 @@
+
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  text-align: center;
+}
+input#id {
+  border: 0;
+}
+
+input#submit {
+  color: white;
+  background-color: #5fe136;
+  border-radius: 4px;
+}
